@@ -98,7 +98,7 @@ footer{
     left: 0;
     z-index: 1;
 }
-.botao{
+button{
     height: 61px;
     width: 100%;
     background-color: #cbcbcb;
@@ -107,20 +107,21 @@ footer{
     align-items: center;
     margin-left: 25px;
     margin-right: 25px;
+    border: 0;
     border-radius: 50px;
 }
-.botao:hover{
+/*button:hover{
     cursor: pointer;
-}
-footer p{
+}*/
+footer span{
     font-weight: 400;
     font-size: 20px;
     color: #ffffff;
 }
-a{
+/*a{
     text-decoration: none;
     display: block;
-}
+}*/
 ion-icon{
     font-size: 19px;
     color: #32B72F;
@@ -135,5 +136,9 @@ ion-icon{
 
 .escondido{
     display: none;
+}
+
+.fundoVerde{
+    background-color: #32B72F;
 }
 

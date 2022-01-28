@@ -69,31 +69,39 @@
         </section>
         <span>Por fim, sua sobremesa</span>
         <section class="sobremesa" data-identifier="desserts">
-            <div class="opcao" data-identifier="food-option">
+            <div class="opcao um" onclick="selecionarSobremesa(this)" data-identifier="food-option">
                 <img src="img/sorvete.jpg" alt="sorvete">
                 <h3 data-identifier="food-title">Sorvete</h3>
                 <h4>3 bolas</h4>
                 <p data-identifier="food-price">R$ 6,90</p>
+                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="opcao" data-identifier="food-option">
+            <div class="opcao dois" onclick="selecionarSobremesa(this)" data-identifier="food-option">
                 <img src="img/pudim.jpg" alt="pudim">
                 <h3 data-identifier="food-title">Pudim</h3>
                 <h4>Com calda</h4>
                 <p data-identifier="food-price">R$ 7,90</p>
+                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
             </div>
-            <div class="opcao" data-identifier="food-option">
+            <div class="opcao tres" onclick="selecionarSobremesa(this)" data-identifier="food-option">
                 <img src="img/bolo.jpg" alt="bolo">
                 <h3 data-identifier="food-title">Bolo no pote</h3>
                 <h4>Sabor chocolate</h4>
                 <p data-identifier="food-price">R$ 9,90</p>
+                <ion-icon class="escondido" name="checkmark-circle"></ion-icon>
             </div>
         </section>
         
     </main>
     <footer>
-        <a class="botao" onclick="wpp()" href="https://wa.me/5522999409879?text=teste 123">
+        
+        <button>
+            <span>Selecione os 3 itens <br> para fechar o pedido</span>
+        </button>
+        
+        <!--<a class="botao" onclick="wpp()" href="https://wa.me/5522999409879?text=teste 123">
         <p>Selecione os 3 itens <br> para fechar o pedido</p>
-        </a>
+        </a>--> 
     </footer>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
