@@ -129,15 +129,12 @@ ion-icon{
     bottom: 14px;
     right: 14px;
 }
-
 .boxGreen{
     box-shadow: inset 0 0 0 5px #32B72F;
 }
-
 .escondido{
     display: none;
 }
-
 .fundoVerde{
     background-color: #32B72F;
 }
