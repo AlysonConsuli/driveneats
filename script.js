@@ -40,7 +40,6 @@ function selecionar(clicado, classeSecao, nome, preco) {
 }
 
 function fecharPedido(){
-     
     const secaoCarne = document.querySelector('.carne')
     const secaoBebida = document.querySelector('.bebida')
     const secaoSobremesa = document.querySelector('.sobremesa')
@@ -58,12 +57,11 @@ function fecharPedido(){
 }
 
 function wpp() {
-    
     const botao = document.querySelector('button')
     const liberado = botao.classList.contains('fundoVerde')
     if(liberado){
         let nomeComprador = prompt('Qual é o seu nome?')
-        let endereco = prompt('Qual o seu endereço?')
+        let endereco = prompt('Qual é o seu endereço?')
         let msg = 'Olá, gostaria de fazer o pedido: \n- Prato: ' + 
         carneSelecionada + '\n- Bebida: ' + 
         bebidaSelecionada + '\n- Sobremesa: ' + 
@@ -73,6 +71,36 @@ function wpp() {
     }
 }
 
-/*function revisao(){
+function revisao(){
+    let revisaoCarne = document.querySelector('.revisaoCarne p:first-child')
+    revisaoCarne.innerHTML = carneSelecionada
+    let revisaoPrecoCarne = document.querySelector('.revisaoCarne p:last-child')
+    revisaoPrecoCarne.innerHTML = precoCarne.toFixed(2).replace(".", ",")
     
-}*/
+    let revisaoBebida = document.querySelector('.revisaoBebida p:first-child')
+    revisaoBebida.innerHTML = bebidaSelecionada
+    let revisaoPrecoBebida = document.querySelector('.revisaoBebida p:last-child')
+    revisaoPrecoBebida.innerHTML = precoBebida.toFixed(2).replace(".", ",")
+
+    let revisaoSobremesa = document.querySelector('.revisaoSobremesa p:first-child')
+    revisaoSobremesa.innerHTML = sobremesaSelecionada
+    let revisaoPrecoSobremesa = document.querySelector('.revisaoSobremesa p:last-child')
+    revisaoPrecoSobremesa.innerHTML = precoSobremesa.toFixed(2).replace(".", ",")
+
+    let revisaoTotal = document.querySelector('.revisaoTotal p:last-child')
+    revisaoTotal.innerHTML = 'R$ ' + total.replace(".", ",")
+
+    let fundo = document.querySelector('.fundo')
+    fundo.classList.remove('escondido')
+
+    let revisao = document.querySelector('.revisao')
+    revisao.classList.remove('escondido')
+}
+
+function cancelar(){
+    let fundo = document.querySelector('.fundo')
+    fundo.classList.add('escondido')
+
+    let revisao = document.querySelector('.revisao')
+    revisao.classList.add('escondido')
+}

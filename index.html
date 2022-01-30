@@ -95,10 +95,37 @@
         
     </main>
     <footer>  
-        <button onclick="wpp()">
+        <button onclick="revisao()">
             <span>Selecione os 3 itens <br> para fechar o pedido</span>
         </button>
     </footer>
+
+    <div class="fundo escondido"></div>
+    <div class="revisao escondido">
+        <h3>Confirme seu pedido</h3>
+        <div class="flex revisaoCarne">
+            <p></p>
+            <p></p>
+        </div>
+        <div class="flex revisaoBebida">
+            <p></p>
+            <p></p>
+        </div>
+        <div class="flex revisaoSobremesa">
+            <p></p>
+            <p></p>
+        </div>
+        <div class="flex revisaoTotal">
+            <p>TOTAL</p>
+            <p></p>
+        </div>
+        <button onclick="wpp()">
+            <span>Tudo certo, pode pedir!</span>
+        </button>
+        <div class="cancelar" onclick="cancelar()">
+            <span>Cancelar</span>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>
