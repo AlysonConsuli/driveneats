@@ -110,18 +110,11 @@ button{
     border: 0;
     border-radius: 50px;
 }
-/*button:hover{
-    cursor: pointer;
-}*/
 footer span{
     font-weight: 400;
     font-size: 20px;
     color: #ffffff;
 }
-/*a{
-    text-decoration: none;
-    display: block;
-}*/
 ion-icon{
     font-size: 19px;
     color: #32B72F;
@@ -138,4 +131,6 @@ ion-icon{
 .fundoVerde{
     background-color: #32B72F;
 }
-
+.fundoVerde:hover{
+    cursor: pointer;
+}
