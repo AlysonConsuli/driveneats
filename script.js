@@ -52,6 +52,7 @@ function fecharPedido(){
         const botao = document.querySelector('button')
         const textoBotao = botao.querySelector('span')
         botao.classList.add('fundoVerde')
+        textoBotao.classList.add('weight700')
         textoBotao.innerHTML = 'Fechar pedido'
     }
 }
